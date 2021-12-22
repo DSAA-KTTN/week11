@@ -217,7 +217,7 @@ int main(){
     char s[30]="kttn";
     char output[512];
     Coding HuffmanTable[256];
-    HuffmanTree tree=makeHuffman(s,12);
+    HuffmanTree tree=makeHuffman(s,strlen(s));
     createHuffmanTable(tree,HuffmanTable);
     compress(s,output,HuffmanTable);
     printf("%s\n",output);
